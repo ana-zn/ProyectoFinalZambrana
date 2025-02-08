@@ -1,0 +1,30 @@
+@use "../utilities/variables.scss" as *; 
+#content-header{
+    background-color: $first--color; 
+    display: flex;
+    align-items: center;
+    padding: 8px 80px;
+
+    nav{
+        width: 100%;
+        ul{
+          
+            display: flex;
+            gap: 56px; 
+            justify-content: center;
+            
+            li{
+                list-style: none;
+                
+                a{
+                    
+                    text-decoration: none;
+                    color: $second--color; 
+                    font-family: $first--font;
+                }
+            }
+        }
+    }
+    
+   
+}
