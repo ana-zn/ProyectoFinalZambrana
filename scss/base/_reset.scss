@@ -1,0 +1,9 @@
+@use "../utilities/variables.scss" as *; 
+*{
+    margin: 0px; 
+    padding: 0px;
+}
+
+body{
+    background: $second--color;
+}
