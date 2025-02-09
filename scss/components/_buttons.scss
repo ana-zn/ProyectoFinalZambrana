@@ -1,0 +1,18 @@
+@use "../utilities/variables.scss" as *; 
+.second-button{
+    background-color: transparent;
+    padding: 8px 24px;
+    color: $second--color;
+    border: $second--border;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: $font-size-s;
+    
+}
+.input-text{
+    background-color: transparent;
+    min-width:640px;
+    padding: 16px 32px;
+    border: $second--border;
+    border-radius: 100px;
+}
