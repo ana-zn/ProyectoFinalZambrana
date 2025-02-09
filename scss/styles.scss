@@ -6,4 +6,9 @@
 
 //layout 
 @use "layout/header.scss"; 
-@use "layout/footer"
+@use "layout/footer"; 
+@use "layout/subscriptionForm"; 
+
+//Components
+
+@use "components/buttons"; 
