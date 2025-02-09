@@ -1,0 +1,47 @@
+@use "../utilities/variables.scss" as *; 
+.footer-container{
+    display: flex;
+    padding: 40px 80px;
+    gap: 24px;
+    border-top: 2px solid $first--color;
+    border-bottom: 2px solid $first--color;
+    .footer-column{
+        flex: 1 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px; 
+        img{
+            margin-right: 40px;
+        }
+        h3{
+            font-family: $second--font; 
+            font-size: $font-size-l;
+            font-style: italic;
+        }
+        ul{
+            li{
+                padding: 8px 0px;
+                list-style: none;
+                a{
+                    
+                    color: $first--color; 
+                    font-family: $first--font;
+                    font-size: $font-size-s;
+                    font-weight: 300;
+                    text-decoration: none;
+                    list-style: none;    
+                }
+            }
+        }
+      
+        
+    }
+}
+
+.footer-copyright{
+    font-family: $first--font;
+    font-size: $font-size-xs;
+    font-weight: 300;
+    padding: 16px;
+    text-align: center;
+}
