@@ -1,0 +1,26 @@
+@use "../utilities/variables.scss" as *; 
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px; 
+    align-items: center;
+    padding: 40px 80px;
+    margin: 32px 80px;
+    background-color: $first--color;
+    color: $second--color;
+    border-radius: 24px;
+    .content-text{
+        text-align: center;
+        h2{
+            font-size: $font-size-xl;
+            font-family: $second--font;
+            font-weight: 400;
+        }
+        p{
+            font-size: $font-size-s;
+            font-family: $first--font;
+        }
+    }
+   
+    
+}

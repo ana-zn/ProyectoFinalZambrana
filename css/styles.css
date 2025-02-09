@@ -4,6 +4,8 @@
 /*Font family*/
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
 /*Tamaño de Tipografias*/
+/*Tipo de Bordes*/
+/*Variable Border*/
 * {
   margin: 0px;
   padding: 0px;
@@ -76,6 +78,48 @@ body {
   font-weight: 300;
   padding: 16px;
   text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  padding: 40px 80px;
+  margin: 32px 80px;
+  background-color: #24221F;
+  color: #F7F3E3;
+  border-radius: 24px;
+}
+.form .content-text {
+  text-align: center;
+}
+.form .content-text h2 {
+  font-size: 3.5rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+}
+.form .content-text p {
+  font-size: 1rem;
+  font-family: "Poppins", serif;
+}
+
+.second-button {
+  background-color: transparent;
+  padding: 8px 24px;
+  color: #F7F3E3;
+  border: 1px solid #F7F3E3;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.input-text {
+  background-color: transparent;
+  min-width: 640px;
+  padding: 16px 32px;
+  border: 1px solid #F7F3E3;
+  border-radius: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */
