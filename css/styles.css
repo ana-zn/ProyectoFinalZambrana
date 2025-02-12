@@ -15,6 +15,34 @@ body {
   background: #F7F3E3;
 }
 
+.container .cardWrapper {
+  padding: 32px 80px;
+}
+.container .cardWrapper .cardlist {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  text-align: center;
+}
+.container .cardWrapper .cardlist .cardItem {
+  color: #B3B6B7;
+  font-family: "Poppins", serif;
+  font-size: 1rem;
+}
+.container .cardWrapper .cardlist .cardItem .userName {
+  padding: 8px 0;
+  font-weight: 600;
+}
+.container .cardWrapper .cardlist .cardItem .userText {
+  line-height: 150%;
+  font-size: 0.875rem;
+}
+.container .cardWrapper .cardlist .cardItem .userImg {
+  height: 332px;
+  width: 100%;
+  object-fit: cover;
+}
+
 #content-header {
   background-color: #24221F;
   display: flex;

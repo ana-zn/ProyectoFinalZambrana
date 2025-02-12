@@ -1,97 +1,77 @@
-const contentMain = document.getElementById('content-main');
+// Seleccionar el elemento main
+const main = document.getElementById("content-main");
 
-const sectionOpinions = document.createElement('section');
-sectionOpinions.classList.add('opinions-section');
+// Crear la sección
+const container = document.createElement('section');
+container.classList.add('container')
 
-const carouselContainer = document.createElement('div');
-carouselContainer.classList.add('carousel-container');
+// Crear el contenedor de tarjetas
+const cardWrapper = document.createElement('div');
+cardWrapper.classList.add('cardWrapper')
 
-const carousel = document.createElement('div');
-carousel.classList.add('carousel-opinions');
-carouselContainer.appendChild(carousel);
-sectionOpinions.appendChild(carouselContainer);
+// Crear la lista de tarjetas
+const cardlist = document.createElement('ul');
+cardlist.classList.add('cardlist')
 
-const opinions = [
-    { user: "Bessie Cooper", text: "I absolutely love these products! The foundation feels so lightweight and gives me flawless coverage all day long. Highly recommend!", img: "https://via.placeholder.com/100", stars: 5 },
-    { user: "John Doe", text: "The lipstick shades are amazing! Long-lasting and smooth application. I'm really impressed.", img: "https://via.placeholder.com/100", stars: 4 },
-    { user: "Alice Smith", text: "Great skincare products! My skin feels refreshed and glowing. Will definitely purchase again.", img: "https://via.placeholder.com/100", stars: 5 },
-    { user: "Michael Brown", text: "Fantastic products! The quality is top-notch and worth every penny.", img: "https://via.placeholder.com/100", stars: 4 },
-    { user: "Emily Davis", text: "I've been using these for weeks and my skin has never felt better!", img: "https://via.placeholder.com/100", stars: 5 },
-    { user: "Chris Wilson", text: "Love how smooth and hydrating the lipsticks are. Will buy again!", img: "https://via.placeholder.com/100", stars: 4 },
-    { user: "Sophia Martinez", text: "The best beauty products I’ve ever tried!", img: "https://via.placeholder.com/100", stars: 5 },
-    { user: "James Taylor", text: "High-quality and long-lasting. I'm very happy with my purchase.", img: "https://via.placeholder.com/100", stars: 4 }
-];
+// Array 
+const cardItems = [
+    {
+        user: "Besie Cooper", 
+        text: "I absolutely love these products! The foundation feels so lightweight and gives me flawless coverage all day long. Highly recommend!", 
+        img: "../media/opiniones/Bessie.jpg", 
+        start: 3, 
+    },
+    {
+        user: "Besie Cooper", 
+        text: "I absolutely love these products! The foundation feels so lightweight and gives me flawless coverage all day long. Highly recommend!", 
+        img: "../media/opiniones/sarah.jpg", 
+        start: 3, 
+    }, 
+    {
+        user: "Besie Cooper", 
+        text: "I absolutely love these products! The foundation feels so lightweight and gives me flawless coverage all day long. Highly recommend!", 
+        img:"../media/opiniones/Bessie.jpg", 
+        start: 3, 
+    },
+    {
+        user: "Besie Cooper", 
+        text: "I absolutely love these products! The foundation feels so lightweight and gives me flawless coverage all day long. Highly recommend!", 
+        img: "../media/opiniones/Jennie.jpg", 
+        start: 3, 
+    }
+]; 
 
-opinions.forEach(opinion => {
-    const slide = document.createElement('div');
-    slide.classList.add('slide');
 
-    const img = document.createElement('img');
-    img.src = opinion.img;
-    img.alt = opinion.user;
+// Iterar sobre el array y agregar elementos a la lista
+cardItems.forEach(item => {
+    const li = document.createElement("li");
+    li.classList.add("cardItem");
 
-    const title = document.createElement('h3');
-    title.textContent = opinion.user;
+    const userName = document.createElement("p");
+    userName.classList.add("userName");
+    userName.textContent = item.user;
 
-    const text = document.createElement('p');
-    text.textContent = opinion.text;
+    // Crear imagen solo si existe una URL válida
+    if (item.img) {
+        const img = document.createElement('img');
+        img.src = item.img;
+        img.alt = item.user;
+        img.classList.add("userImg");
+        li.appendChild(img);
+    }
 
-    const starContainer = document.createElement('div');
-    starContainer.classList.add('stars');
-    starContainer.textContent = '★'.repeat(opinion.stars) + '☆'.repeat(5 - opinion.stars);
+    const userText = document.createElement("p");
+    userText.classList.add("userText");
+    userText.textContent = item.text;
 
-    slide.appendChild(img);
-    slide.appendChild(title);
-    slide.appendChild(text);
-    slide.appendChild(starContainer);
-    carousel.appendChild(slide);
+    li.appendChild(userName);
+    li.appendChild(userText);
+    cardlist.appendChild(li);
 });
 
-contentMain.appendChild(sectionOpinions);
 
-let index = 0;
-const opinionsPerPage = 4;
-const totalSlides = Math.ceil(opinions.length / opinionsPerPage);
+cardWrapper.appendChild(cardlist);
 
-function moveCarousel() {
-    index++;
-    if (index >= totalSlides) {
-        index = 0;
-    }
-    carousel.style.transform = `translateX(-${index * 100}%)`;
-}
+container.appendChild(cardWrapper);
 
-setInterval(moveCarousel, 3000);
-
-// CSS Styles
-document.head.insertAdjacentHTML('beforeend', `
-    <style>
-
-        .carousel-container {
-            width: 100%;
-            overflow: hidden;
-        }
-        .carousel-opinions {
-            display: flex;
-            padding: 0 80px;
-            transition: transform 0.5s ease-in-out;
-            width: calc(100% * ${totalSlides});
-        }
-        .slide {
-            flex: 1 0 calc(100% / ${opinionsPerPage});
-            box-sizing: border-box;
-            padding: 10px;
-            text-align: center;
-            max-width:25%; 
-        }
-        .slide img {
-            border-radius: 50%;
-            width: 80px;
-            height: 80px;
-        }
-        .stars {
-            font-size: 20px;
-            color: gold;
-        }
-    </style>
-`);
+main.appendChild(container);

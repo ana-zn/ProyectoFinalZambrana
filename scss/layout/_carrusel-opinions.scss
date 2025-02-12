@@ -1,1 +1,34 @@
 @use "../utilities/variables.scss" as *;
+.container{
+    .cardWrapper{
+        padding: 32px 80px;
+        .cardlist{
+            display: flex;
+            gap:24px; 
+            list-style: none;
+            text-align: center;
+            .cardItem{
+                color: $third--color;
+                font-family: $first--font;
+                font-size: $font-size-s;
+                .userName{
+                    padding: 8px 0;
+                    font-weight: 600;
+                }
+                .userText{
+                    line-height: 150%;
+                    font-size: $font-size-xs;
+                }
+                .userImg{
+                    height: 332px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+           
+        }
+    }
+   
+
+
+}
