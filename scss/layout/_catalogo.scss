@@ -1,0 +1,39 @@
+@use "../utilities/variables.scss" as *; 
+
+.container{
+    display: flex;
+    padding: 40px 80px;
+    .containerProducts{
+        .productslist{
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px; 
+            .productItem{
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                text-align: center;
+                gap:8px; 
+                font-family: $first--font;
+                color: $first--color;
+                .productImg{
+                    height: 300px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                .titleProduct{
+                    font-size: $font-size-s;
+                    font-weight: 500;
+                }
+                .description{
+                    font-size: $font-size-xs;
+                    color: $third--color;
+                }
+                .price{
+                    font-weight: 600;
+                    padding: 8px 0;
+                }
+            }
+        }
+    }
+}
