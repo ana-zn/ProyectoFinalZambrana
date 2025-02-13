@@ -5,7 +5,9 @@
 @use "utilities/variables"; 
 
 //layout 
+@use "layout/container-imagenes"; 
 @use "layout/carrusel-opinions"; 
+@use "layout/catalogo"; 
 @use "layout/header.scss"; 
 @use "layout/footer"; 
 @use "layout/subscriptionForm"; 

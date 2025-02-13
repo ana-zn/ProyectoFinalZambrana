@@ -1,15 +1,15 @@
-// Seleccionar el elemento main
-const main = document.getElementById("content-main");
 
-// Crear la sección
+const mainCarrusel = document.getElementById("content-main");
+
+// Seccion 
 const container = document.createElement('section');
 container.classList.add('container')
 
-// Crear el contenedor de tarjetas
+// Contenedor de tarjetas
 const cardWrapper = document.createElement('div');
 cardWrapper.classList.add('cardWrapper')
 
-// Crear la lista de tarjetas
+//Lista de tarjetas
 const cardlist = document.createElement('ul');
 cardlist.classList.add('cardlist')
 
@@ -42,7 +42,7 @@ const cardItems = [
 ]; 
 
 
-// Iterar sobre el array y agregar elementos a la lista
+// Se itera el array 
 cardItems.forEach(item => {
     const li = document.createElement("li");
     li.classList.add("cardItem");
@@ -51,7 +51,6 @@ cardItems.forEach(item => {
     userName.classList.add("userName");
     userName.textContent = item.user;
 
-    // Crear imagen solo si existe una URL válida
     if (item.img) {
         const img = document.createElement('img');
         img.src = item.img;

@@ -15,6 +15,23 @@ body {
   background: #F7F3E3;
 }
 
+.containerImages {
+  height: 500px;
+  width: 100%;
+}
+.containerImages .imageslist {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  object-fit: cover;
+}
+.containerImages .imageslist img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .container .cardWrapper {
   padding: 32px 80px;
 }
@@ -41,6 +58,42 @@ body {
   height: 332px;
   width: 100%;
   object-fit: cover;
+}
+
+.container {
+  display: flex;
+  padding: 40px 80px;
+}
+.container .containerProducts .productslist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.container .containerProducts .productslist .productItem {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  gap: 8px;
+  font-family: "Poppins", serif;
+  color: #24221F;
+}
+.container .containerProducts .productslist .productItem .productImg {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.container .containerProducts .productslist .productItem .titleProduct {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.container .containerProducts .productslist .productItem .description {
+  font-size: 0.875rem;
+  color: #B3B6B7;
+}
+.container .containerProducts .productslist .productItem .price {
+  font-weight: 600;
+  padding: 8px 0;
 }
 
 #content-header {

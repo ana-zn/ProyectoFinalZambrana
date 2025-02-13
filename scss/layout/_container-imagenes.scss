@@ -1,0 +1,17 @@
+.containerImages{
+    height: 500px;
+    width: 100%;
+
+    .imageslist{
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        object-fit: cover;
+        img{
+            height: 500px;
+            width: 100%; 
+            object-fit: cover;
+        }
+    }
+}
