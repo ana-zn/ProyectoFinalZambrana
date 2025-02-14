@@ -1,0 +1,29 @@
+@use "../utilities/variables.scss" as *;  
+
+.bannerhero{
+    background: url(../../media/Womanstratchingisolatedsectionhero.jpg);
+
+    background-position: center;
+    height: 900px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 40px;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    .content{
+        padding: 0 80px;
+        .titlebanner{
+            font-family: $second--font; 
+            font-size: $font-size-xxl;
+            width: 600px;
+            line-height: 50%;
+            letter-spacing: -2px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: normal; 
+            text-transform: capitalize;
+            color: $second--color;
+        }
+    }
+}

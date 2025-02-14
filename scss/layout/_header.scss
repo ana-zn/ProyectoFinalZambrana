@@ -13,7 +13,7 @@ header {
     transition: background-color $transition-speed, opacity 0.5s;
     display: flex;
     box-sizing: border-box;
-    
+    z-index: 100;
    
     &.bgc {
         background-color: $bg-color;

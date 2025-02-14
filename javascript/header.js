@@ -59,35 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
   sectionheader.appendChild(iconsContainer);
   header.appendChild(sectionheader); 
 
-
-  /*document.addEventListener("DOMContentLoaded", function () {
-  const header = document.getElementById("content-header");
-
-  let lastScrollTop = 0;
-
-  window.addEventListener("scroll", function () {
-    let scrollTop = window.scrollY;
-
-    if (scrollTop > 50) {
-      header.classList.add("bgc");
-    } else {
-      header.classList.remove("bgc");
-    }
-
-    if (scrollTop > lastScrollTop && scrollTop > 50) {
-      // El usuario está desplazándose hacia abajo, ocultar el header
-      header.classList.add("hidden");
-      header.classList.remove("visible");
-    } else {
-      // El usuario está desplazándose hacia arriba, mostrar el header
-      header.classList.add("visible");
-      header.classList.remove("hidden");
-    }
-
-    lastScrollTop = scrollTop;
-  });
-});
- */
   // --- Efectos de Scroll ---
   let lastScrollTop = 0;
   window.addEventListener("scroll", function () {
