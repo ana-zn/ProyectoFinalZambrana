@@ -1,30 +1,87 @@
-@use "../utilities/variables.scss" as *; 
-#content-header{
-    background-color: $first--color; 
-    display: flex;
-    align-items: center;
-    padding: 8px 80px;
 
-    nav{
+@use "../utilities/variables.scss" as *; 
+
+
+header {
+    .sectionheader{
+    position: fixed;
+    padding: 16px 80px;
+    margin: 16px 80px;
+    width: 90%; 
+    border-radius: 100px;
+    background-color: $bg-color;
+    transition: background-color $transition-speed, opacity 0.5s;
+    display: flex;
+    box-sizing: border-box;
+    
+   
+    &.bgc {
+        background-color: $bg-color;
+        color: white;
+    }
+    .container-navbar{
+        display: flex;
+        justify-content: center;
+       
         width: 100%;
-        ul{
-          
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity $nav-transition-speed ease-out, transform $nav-transition-speed ease-out; 
+        .container-list{
             display: flex;
-            gap: 56px; 
-            justify-content: center;
-            
-            li{
+            align-items: center;
+            .list-items{
                 list-style: none;
-                
-                a{
-                    
+                a {
                     text-decoration: none;
-                    color: $second--color; 
+                    padding:8px 16px;
+                    margin: 0 8px;
+                    border-radius: 50px;
+                    color: $second--color;
+                    font-size: $first--font;
                     font-family: $first--font;
+                    font-weight: 300;
+                    transition: background-color 0.3s ease, color 0.3s ease; 
+                
+                    &:hover {
+                       
+                        background-color: $second--color;
+                        color: $first--color;
+                    }
                 }
+                
+               
             }
         }
     }
+    .iconsContainer{
+        display: flex;
+        gap:16px; 
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        .button{
+            background-color: transparent;
+            outline: none;
+            border: none;
+            border-radius: 100px;
+            width: 40px;
+            height: 40px;
+            box-sizing: content-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $second--color;
+            cursor: pointer;
+            i{
+                font-size: $font-size-s;
+            }
+        }
+       
+    }
+
+    }
     
-   
 }
+
+

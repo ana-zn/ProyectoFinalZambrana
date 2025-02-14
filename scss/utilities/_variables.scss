@@ -4,6 +4,7 @@
 $first--color: #24221F; 
 $second--color: #F7F3E3; 
 $third--color: #B3B6B7; 
+$bg-color: rgba(36, 34, 31, 0.8); 
 
 
 /*Font family*/
@@ -25,3 +26,8 @@ $font-size-xs: 0.875rem;
 /*Variable Border*/
 $first--border: 1px solid #24221F;
 $second--border: 1px solid #F7F3E3;
+
+
+/*Trasciociones*/
+$transition-speed: 0.3s;
+$nav-transition-speed: 0.8s;
