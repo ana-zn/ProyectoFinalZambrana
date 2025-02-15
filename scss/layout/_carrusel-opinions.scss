@@ -1,34 +1,91 @@
-@use "../utilities/variables.scss" as *;
-.container{
-    box-sizing: border-box;
-    .cardWrapper{
-        .cardlist{
-            display: flex;
-            gap:24px; 
-            list-style: none;
-            text-align: center;
-            .cardItem{
-                color: $third--color;
-                font-family: $first--font;
-                font-size: $font-size-s;
-                .userName{
-                    padding: 8px 0;
-                    font-weight: 600;
-                }
-                .userText{
-                    line-height: 150%;
-                    font-size: $font-size-xs;
-                }
-                .userImg{
-                    height: 332px;
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
-           
-        }
+@use "../utilities/variables.scss" as *; 
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+  }
+  
+  .cardWrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+  }
+  
+  .slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cardlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .cardItem {
+    width: 280px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 10px;
+    color: $third--color;
+    font-family:$first--font;
+    align-items: center;
+    img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
     }
-   
-
-
-}
+  
+    .userName {
+        
+        font-size: $font-size-m;
+        font-weight: 500;
+        margin: 8px 0;
+    }
+  
+    .userText {
+      font-size: $font-size-xs; 
+      line-height: 150%;
+      height: 84px;
+    }
+    .stars{
+      display: flex;
+      gap: 8px; 
+      order: 3;
+      i{
+        font-size: $font-size-m;
+      }
+    }
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $bg-color;
+    border-radius: 50px;
+    color: $second--color; 
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+    i{
+        font-size: $font-size-l; 
+    }
+    &.prev {
+      left: 10px;
+    }
+  
+    &.next {
+      right: 10px;
+    }
+  }
+  
