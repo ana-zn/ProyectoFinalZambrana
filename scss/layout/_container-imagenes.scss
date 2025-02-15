@@ -1,18 +1,73 @@
-.containerImages{
+@use "../utilities/variables.scss" as *;
+.containerImages {
     height: 500px;
     width: 100%;
     box-sizing: border-box;
-     overflow: hidden;
-    .imageslist{
-        height: 500px;
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        object-fit: cover;
-        img{
-            height: 500px;
-            width: 100%; 
-            object-fit: cover;
-        }
+    overflow: hidden;
+    position: relative;
+}
+
+.imageslist {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: relative; /* Para que los .div1 se posicionen correctamente */
+}
+
+.imageslist img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+.div1, .div2 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-sizing: content-box;
+    background-color: $second--color;
+    z-index: 50;
+    border: none;
+    outline: none;
+    animation: tamañoConstante 1s infinite alternate; 
+    animation-play-state: running; /* La animación está corriendo por defecto */
+    transition: transform 0.3s ease; /* Suaviza el cambio de tamaño en hover */
+}
+
+.div1:hover, .div2:hover {
+    transform: scale(3); /* Aumenta el tamaño al 200% al hacer hover */
+    animation-play-state: paused; /* Detiene la animación cuando el hover está activo */
+}
+
+@keyframes tamañoConstante {
+    0% {
+        transform: scale(1); /* Tamaño inicial */
+    }
+    100% {
+        transform: scale(1.5); /* Aumento del tamaño */
     }
 }
+
+  
+.span1, .span2{
+    display: none;
+    position: absolute;
+}
+  
+  /* Posiciones únicas para cada ID generado dinámicamente */
+  #div1 {
+    &-0 { top: 220px; left: 120px; }
+    &-1 { top: 170px; left: 550px; }
+    &-2 { top: 200px; left: 970px; }
+    &-3 { top: 220px; left: 1300px; }
+  }
+  
+  /* Posiciones para div2 */
+  #div2 {
+    &-0 { top: 320px; left: 170px; }
+    &-1 { top: 220px; left: 500px; }
+    &-2 { top: 250px; left: 820px; }
+    &-3 { top: 320px; left: 1300px; }
+  }
+  

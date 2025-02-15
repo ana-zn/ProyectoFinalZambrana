@@ -18,21 +18,25 @@ const cartModal = document.createElement('div');
 cartModal.classList.add('cartModal');
 cartModal.innerHTML = `
     <div class="cartModal-content">
-        <span class="closeModal">&times;</span>
-        <h2>Carrito de Compras</h2>
-        <ul class="cartList"></ul>
-        <div class="totalPriceContainer">Total: $0</div>
-        <button class="completePurchaseButton">Completar Compra</button>
+        <div class= content-card>
+            <i class='bx bx-x closeModal'></i>
+            <h2 class= "titleModal">Carrito de Compras</h2>
+            <ul class="cartList"></ul>
+        </div>
+        <div>
+            <div class="totalPriceContainer">Total: $0</div>
+            <button class="completePurchaseButton">Completar Compra</button>
+        </div>
+        
     </div>
 `;
 
-// Obtener elementos del modal
 const cartList = cartModal.querySelector('.cartList');
 const totalPriceContainer = cartModal.querySelector('.totalPriceContainer');
 const closeModal = cartModal.querySelector('.closeModal');
 const completePurchaseButton = cartModal.querySelector('.completePurchaseButton');
 
-// Agregar el modal al body
+// Agregar el Modal 
 document.body.appendChild(cartModal);
 
 // Función para actualizar el carrito en el modal
@@ -130,7 +134,7 @@ containerProducts.appendChild(productslist);
 container.appendChild(containerProducts);
 catalogo.appendChild(container);
 
-// **INTEGRACIÓN CON EL BOTÓN SHOP-BAG**
+
 document.addEventListener("DOMContentLoaded", () => {
     const cartButton = document.getElementById('shop-bag');
     
@@ -157,4 +161,4 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-console.log(document.getElementById('shop-bag'))
+

@@ -1,3 +1,4 @@
+@use "../utilities/variables.scss" as *; 
 .cartModal {
     display: none;
     box-sizing: content-box;
@@ -7,16 +8,19 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: $bg-color;
     display: flex ;
     justify-content:center;
     z-index: 100;
-
+     
     &-content {
         position: fixed;
         top: 0;
         right: 0;
-        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: $second--color;  
         padding: 20px;
         border-radius: 16px;
         text-align: center;
@@ -27,9 +31,37 @@
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         transform: translateX(100%); 
         transition: transform 0.3s ease-in-out;
+        .content-card{
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            .titleModal{
+                width: 100%;
+                text-align: center;
+                font-family: $second--font;
+                font-size: $font-size-l; 
+            }
+            ul{
+                width: 100%;
+                li{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    list-style: none;
+                }
+            }
+        }
+
+        .totalPriceContainer{
+            width: 100%;
+        }
     }
 
-    &.active &-content {
-        transform: translateX(0); // Mueve hacia adentro al abrir
+    &.active {
+        .cartModal-content {
+            transform: translateX(0);
+        }
     }
+    
 }

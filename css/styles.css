@@ -27,18 +27,90 @@ body main {
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
+  position: relative;
 }
-.containerImages .imageslist {
+
+.imageslist {
   height: 500px;
   display: flex;
   flex-direction: row;
   list-style: none;
-  object-fit: cover;
+  position: relative; /* Para que los .div1 se posicionen correctamente */
 }
-.containerImages .imageslist img {
+
+.imageslist img {
   height: 500px;
   width: 100%;
   object-fit: cover;
+}
+
+.div1, .div2 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-sizing: content-box;
+  background-color: #F7F3E3;
+  z-index: 50;
+  border: none;
+  outline: none;
+  animation: tamañoConstante 1s infinite alternate;
+  animation-play-state: running; /* La animación está corriendo por defecto */
+  transition: transform 0.3s ease; /* Suaviza el cambio de tamaño en hover */
+}
+
+.div1:hover, .div2:hover {
+  transform: scale(3); /* Aumenta el tamaño al 200% al hacer hover */
+  animation-play-state: paused; /* Detiene la animación cuando el hover está activo */
+}
+
+@keyframes tamañoConstante {
+  0% {
+    transform: scale(1); /* Tamaño inicial */
+  }
+  100% {
+    transform: scale(1.5); /* Aumento del tamaño */
+  }
+}
+.span1, .span2 {
+  display: none;
+  position: absolute;
+}
+
+/* Posiciones únicas para cada ID generado dinámicamente */
+#div1-0 {
+  top: 220px;
+  left: 120px;
+}
+#div1-1 {
+  top: 170px;
+  left: 550px;
+}
+#div1-2 {
+  top: 200px;
+  left: 970px;
+}
+#div1-3 {
+  top: 220px;
+  left: 1300px;
+}
+
+/* Posiciones para div2 */
+#div2-0 {
+  top: 320px;
+  left: 170px;
+}
+#div2-1 {
+  top: 220px;
+  left: 500px;
+}
+#div2-2 {
+  top: 250px;
+  left: 820px;
+}
+#div2-3 {
+  top: 320px;
+  left: 1300px;
 }
 
 .container {
@@ -400,7 +472,7 @@ header .sectionheader .iconsContainer .button i {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(36, 34, 31, 0.8);
   display: flex;
   justify-content: center;
   z-index: 100;
@@ -409,7 +481,10 @@ header .sectionheader .iconsContainer .button i {
   position: fixed;
   top: 0;
   right: 0;
-  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #F7F3E3;
   padding: 20px;
   border-radius: 16px;
   text-align: center;
@@ -420,6 +495,30 @@ header .sectionheader .iconsContainer .button i {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
+}
+.cartModal-content .content-card {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.cartModal-content .content-card .titleModal {
+  width: 100%;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+}
+.cartModal-content .content-card ul {
+  width: 100%;
+}
+.cartModal-content .content-card ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  list-style: none;
+}
+.cartModal-content .totalPriceContainer {
+  width: 100%;
 }
 .cartModal.active .cartModal-content {
   transform: translateX(0);

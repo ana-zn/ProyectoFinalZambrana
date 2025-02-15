@@ -14,7 +14,7 @@ function closeModal() {
     let cartModal = document.getElementById("cartModal");
     let cartContent = document.querySelector(".cartModal-content");
 
-    cartContent.style.transform = "translateX(100%)"; // Deslizar hacia afuera
+    // cartContent.style.transform = "translateX(100%)"; // Deslizar hacia afuera
 
     setTimeout(() => {
         cartModal.classList.remove("active"); // Ocultar modal después de la animación
