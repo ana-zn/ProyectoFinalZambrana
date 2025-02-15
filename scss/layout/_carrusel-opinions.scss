@@ -1,5 +1,6 @@
 @use "../utilities/variables.scss" as *;
 .container{
+    box-sizing: border-box;
     .cardWrapper{
         .cardlist{
             display: flex;

@@ -1,15 +1,24 @@
 @use "../utilities/variables.scss" as *; 
 
 .container{
-    display: flex;
     padding: 40px 80px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
     .containerProducts{
+        display: flex;
+        justify-content: center;
         .productslist{
-            display: grid; 
+            box-sizing: content-box;
+            display: grid;
+            justify-content: center;
             grid-template-columns: repeat(3, 1fr);
             gap: 24px; 
+            width: 100%;
             .productItem{
                 display: flex;
+                width: 100%;
                 flex-direction: column;
                 align-content: center;
                 text-align: center;
@@ -35,5 +44,10 @@
                 }
             }
         }
+       
+        
+    }
+    .containerFilter{
+        order: 1;
     }
 }

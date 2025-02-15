@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Lista de Enlaces
   const links = [
-    { text: "Inicio", href: "index.html" },
+    { text: "Inicio", href: "../index.html" },
     { text: "Nosotros", href: "nosotros.html" },
     { text: "Catalogo", href: "../html/catalogo.html" },
     { text: "Contacto", href: "contacto.html" }
@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Botón del carrito
   const cartButton = document.createElement("button");
   cartButton.classList.add("button");
+  cartButton.id = 'shop-bag';
   cartButton.innerHTML = "<i class='bx bx-shopping-bag'></i>";
   const searchButton = document.createElement("button");
   searchButton.classList.add('button');
@@ -108,3 +109,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+console.log("Cart button en header.js:", document.getElementById('shop-bag'));

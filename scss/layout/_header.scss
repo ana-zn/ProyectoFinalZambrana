@@ -13,7 +13,7 @@ header {
     transition: background-color $transition-speed, opacity 0.5s;
     display: flex;
     box-sizing: border-box;
-    z-index: 100;
+    z-index: 2;
    
     &.bgc {
         background-color: $bg-color;
@@ -21,8 +21,8 @@ header {
     }
     .container-navbar{
         display: flex;
+        box-sizing: border-box;
         justify-content: center;
-       
         width: 100%;
         opacity: 0;
         transform: translateY(-20px);
@@ -67,7 +67,7 @@ header {
             border-radius: 100px;
             width: 40px;
             height: 40px;
-            box-sizing: content-box;
+            box-sizing: border-box;
             display: flex;
             align-items: center;
             justify-content: center;

@@ -1,7 +1,8 @@
 .containerImages{
     height: 500px;
     width: 100%;
-
+    box-sizing: border-box;
+    overflow: hidden;
     .imageslist{
         height: 500px;
         display: flex;

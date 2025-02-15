@@ -1,0 +1,68 @@
+[
+    {
+        "id": "top-01",
+        "titulo": "Top",
+        "descripcion": "Breve descripción del producto como, talle o colores", 
+        "imagen": "../media/opiniones/Jennie.jpg",
+        "categoria": {
+            "nombre": "arriba",
+            "id": "Top"
+        },
+        "precio": 1000
+    }, 
+    {
+        "id": "top-01",
+        "titulo": "Top",
+        "descripcion": "Breve descripción del producto como, talle o colores", 
+        "imagen": "../media/opiniones/Jennie.jpg",
+        "categoria": {
+            "nombre": "arriba",
+            "id": "Top"
+        },
+        "precio": 1000
+    }, 
+    {
+        "id": "top-01",
+        "titulo": "Top",
+        "descripcion": "Breve descripción del producto como, talle o colores", 
+        "imagen": "../media/opiniones/Jennie.jpg",
+        "categoria": {
+            "nombre": "arriba",
+            "id": "Top"
+        },
+        "precio": 1000
+    }, 
+    {
+        "id": "top-01",
+        "titulo": "Top",
+        "descripcion": "Breve descripción del producto como, talle o colores", 
+        "imagen": "../media/opiniones/Jennie.jpg",
+        "categoria": {
+            "nombre": "arriba",
+            "id": "Top"
+        },
+        "precio": 1000
+    },  
+    {
+        "id": "top-01",
+        "titulo": "Top",
+        "descripcion": "Breve descripción del producto como, talle o colores", 
+        "imagen": "../media/opiniones/Jennie.jpg",
+        "categoria": {
+            "nombre": "arriba",
+            "id": "Top"
+        },
+        "precio": 1000
+    }, 
+    {
+        "id": "top-01",
+        "titulo": "Top",
+        "descripcion": "Breve descripción del producto como, talle o colores", 
+        "imagen": "../media/opiniones/Jennie.jpg",
+        "categoria": {
+            "nombre": "arriba",
+            "id": "Top"
+        },
+        "precio": 1000
+    }
+]
