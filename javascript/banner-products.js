@@ -7,10 +7,10 @@ const imageslist = document.createElement('ul');
 imageslist.classList.add('imageslist');
 
 const images = [
-    { img: "../media/bannerImagenes/1.jpg", span1Text: "Top de manga larga Beige $55.999", span2Text: "Leggings de tiro alto Beige $62.999" },
-    { img: "../media/bannerImagenes/2.jpg", span1Text: "Top Marron $45.999", span2Text: "Leggings de tiro alto Marron $88.999 " },
-    { img: "../media/bannerImagenes/3.jpg", span1Text: "Leggings transparencias en laterales $95.999", span2Text: "Top Deportivo Negro $55.999" },
-    { img: "../media/bannerImagenes/4.jpg", span1Text: "Top Terracota, tirantes anchos $55.999", span2Text: "Leggings de tiro alto Terracota $55.999" },
+    { img: "media/bannerImagenes/1.jpg", span1Text: "Top de manga larga Beige $55.999", span2Text: "Leggings de tiro alto Beige $62.999" },
+    { img: "media/bannerImagenes/2.jpg", span1Text: "Top Marron $45.999", span2Text: "Leggings de tiro alto Marron $88.999 " },
+    { img: "media/bannerImagenes/3.jpg", span1Text: "Leggings transparencias en laterales $95.999", span2Text: "Top Deportivo Negro $55.999" },
+    { img: "media/bannerImagenes/4.jpg", span1Text: "Top Terracota, tirantes anchos $55.999", span2Text: "Leggings de tiro alto Terracota $55.999" },
 ];
 
 images.forEach((item, index) => {
