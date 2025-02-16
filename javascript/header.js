@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   logoContainer.classList.add("logo-container");
 
   const logo = document.createElement("img");
-  logo.src = "media/logo.svg";
+  logo.src = "../media/logo.svg";
   logo.alt = "Logo de Pure Bliss";
 
   // Navegación

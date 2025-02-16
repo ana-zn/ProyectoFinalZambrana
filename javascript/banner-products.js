@@ -7,7 +7,7 @@ titleSection.classList.add('title-section');
 
 const heading = document.createElement('h2'); 
 heading.classList.add('heading'); 
-heading.innerHTML = 'Nueva Colección';
+heading.innerHTML = 'Nueva Colección warm';
 
 const discoverButton = document.createElement('button'); 
 discoverButton.classList.add('discover-button'); 

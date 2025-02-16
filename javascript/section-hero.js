@@ -13,7 +13,7 @@ titlebanner.innerHTML = ('where comfort meets flexibility');
 
 const buttonhero = document.createElement('button'); 
 buttonhero.classList.add('buttonhero'); 
-buttonhero.innerHTML = ('Shop Now'); 
+buttonhero.innerHTML = ('Comprar Ahora'); 
 
 content.appendChild(titlebanner); 
 content.appendChild(buttonhero); 
