@@ -10,17 +10,15 @@ const cardItems = [
     {
         user: "Julieta Aguilera", 
         text: "¡Este conjunto es una maravilla! Se adapta perfectamente al cuerpo, es cómodo y el diseño es precioso. Sin duda, mi favorito para yoga.", 
-        img: "../media/opiniones/valentina.jpg", 
+        img: "../media/opiniones/Julieta.jpg", 
         start: 5, 
     },
     {
         user: "Candela d'Hiriart", 
         text: "Me encanta la calidad del tejido, es súper suave y elástico. Además, los colores son hermosos y combinan con todo.", 
-        img: "../media/opiniones/isabella.jpg", 
+        img: "../media/opiniones/Candela.jpg", 
         start: 5, 
-    },
-    
-    
+    },   
     {
         user: "Sofía Alarcón", 
         text: "La ropa deportiva más elegante y funcional que he usado. No se enrolla ni se mueve durante el ejercicio, y el diseño es precioso.", 
@@ -30,7 +28,7 @@ const cardItems = [
     {
         user: "Noeli Condo", 
         text: "El ajuste es perfecto y el material transpirable lo hace ideal para mis sesiones de yoga. Se siente como una segunda piel.", 
-        img: "../media/opiniones/elena.jpg", 
+        img: "../media/opiniones/noeli.jpg", 
         start: 5, 
     },
     {
@@ -48,19 +46,19 @@ const cardItems = [
     {
         user: "Luciana Castro", 
         text: "Es el conjunto más cómodo que he probado. La tela es ligera pero de buena calidad, y me permite moverme sin restricciones.", 
-        img: "../media/opiniones/camila.jpg", 
+        img: "../media/opiniones/luciana.jpg", 
         start: 4, 
     },
     {
-        user: "Julieta Navarro", 
+        user: "Alejandra Navarro", 
         text: "Desde que compré este conjunto, se ha convertido en mi favorito. Es ligero, transpirable y además estiliza la figura.", 
-        img: "../media/opiniones/julieta.jpg", 
+        img: "../media/opiniones/alejandra.jpg", 
         start: 5, 
     },
     {
         user: "Samantha Cirio", 
         text: "¡Este conjunto es espectacular! Se adapta perfectamente, la tela es de alta calidad y es ideal para practicar yoga con total comodidad.", 
-        img: "../media/opiniones/mariana.jpg", 
+        img: "../media/opiniones/samantha.jpg", 
         start: 5, 
     },
     {
@@ -70,9 +68,9 @@ const cardItems = [
         start: 4, 
     },
     {
-        user: "Luciana Ferrer", 
+        user: "Bessie Ferrer", 
         text: "Es mi conjunto favorito para yoga. La calidad es impresionante, es transpirable y el diseño es elegante y favorecedor.", 
-        img: "../media/opiniones/luciana.jpg", 
+        img: "../media/opiniones/bessie.jpg", 
         start: 5, 
     },
     {
