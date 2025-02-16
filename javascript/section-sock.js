@@ -7,11 +7,10 @@ const contentImage = document.createElement('div');
 contentImage.classList.add('content-images'); 
 
 const mainImage = document.createElement('img');
-mainImage.src = 'media/sectionSock/brownsock.webp'; 
-mainImage.alt = 'Imagen principal';
+mainImage.src = ' media/sectionSock/whitesock.webp'; 
+mainImage.alt = 'Medias Antideslizantes Beige';
 contentImage.appendChild(mainImage);
 
-// Agregar título y precio a la imagen principal al pasar el mouse
 const overlayMain = document.createElement('div');
 overlayMain.classList.add('overlay-main');
 
@@ -20,27 +19,28 @@ titleMain.textContent = 'Medias de Pilates Marrones';
 overlayMain.appendChild(titleMain);
 
 const priceMain = document.createElement('p');
-priceMain.textContent = '$39.99';  
+priceMain.textContent = '$10.000';  
 overlayMain.appendChild(priceMain);
 
-contentImage.appendChild(overlayMain); // Agregar la superposición a la imagen principal
+contentImage.appendChild(overlayMain); 
 
 const contentwrapper = document.createElement('div'); 
 contentwrapper.classList.add('contentwrapper');
 
 const imageSources = [
-    'media/sectionSock/whitesock.webp',
-    'media/sectionSock/orangesock.webp'
+    'media/sectionSock/orangesock.webp',
+    'media/sectionSock/brownsock.webp'
 ];
 
 const titles = [
-    'Medias de Pilates Blancas',
-    'Medias de Pilates Naranjas'
+    'Medias Orange Pilates',
+    'Medias Chocolate de agarre',
+    
 ];
 
 const prices = [
-    '$29.99',
-    '$34.99'
+    '$12.000',
+    '$15.000'
 ];
 
 const texts = [

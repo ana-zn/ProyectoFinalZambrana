@@ -1,10 +1,26 @@
 @use "../utilities/variables.scss" as *;
 .containerImages {
-    height: 500px;
+    height:800px;
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
+
+    .title-section{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+        padding:  0 80px;
+        margin: 32px 0 ;
+
+        .heading{
+            font-family: $second--font; 
+            font-size: $font-size-xxl;
+            font-style: italic;
+            font-weight: 400;
+        }
+    }
 }
 
 .imageslist {

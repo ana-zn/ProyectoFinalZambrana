@@ -45,7 +45,7 @@
         }
     }
 }
-.buttonAddtocard{
+.buttonAddtocard, .discover-button{
     position: relative;
     overflow: hidden; 
     display: flex; 
@@ -82,16 +82,21 @@
         }
     }
 }
+.discover-button{
+    width: 300px;
+}
 .second-button{
     background-color: transparent;
     padding: 8px 24px;
-    color: $second--color;
-    border: $second--border;
     border-radius: 100px;
     cursor: pointer;
     font-size: $font-size-s;
-    
 }
+.second-button{
+    color: $second--color;
+    border: $second--border;
+}
+
 .input-text{
     background-color: transparent;
     min-width:640px;

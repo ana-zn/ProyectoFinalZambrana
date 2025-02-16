@@ -2,15 +2,46 @@ const main = document.getElementById("content-main");
 
 const containerImages = document.createElement('section');
 containerImages.classList.add('containerImages');
+const titleSection = document.createElement('div'); 
+titleSection.classList.add('title-section'); 
+
+const heading = document.createElement('h2'); 
+heading.classList.add('heading'); 
+heading.innerHTML = 'Nueva Colección';
+
+const discoverButton = document.createElement('button'); 
+discoverButton.classList.add('discover-button'); 
+discoverButton.innerHTML = 'Descubrir más';
+
+titleSection.appendChild(heading); 
+titleSection.appendChild(discoverButton); 
+containerImages.appendChild(titleSection);
+
 
 const imageslist = document.createElement('ul');
 imageslist.classList.add('imageslist');
 
 const images = [
-    { img: "media/bannerImagenes/1.jpg", span1Text: "Top de manga larga Beige $55.999", span2Text: "Leggings de tiro alto Beige $62.999" },
-    { img: "media/bannerImagenes/2.jpg", span1Text: "Top Marron $45.999", span2Text: "Leggings de tiro alto Marron $88.999 " },
-    { img: "media/bannerImagenes/3.jpg", span1Text: "Leggings transparencias en laterales $95.999", span2Text: "Top Deportivo Negro $55.999" },
-    { img: "media/bannerImagenes/4.jpg", span1Text: "Top Terracota, tirantes anchos $55.999", span2Text: "Leggings de tiro alto Terracota $55.999" },
+    { 
+        img: "media/bannerImagenes/1.jpg", 
+        span1Text: "Top de manga larga Beige $55.999", 
+        span2Text: "Leggings de tiro alto Beige $62.999" 
+    },
+    { 
+        img: "media/bannerImagenes/2.jpg", 
+        span1Text: "Top Marron $45.999", 
+        span2Text: "Leggings de tiro alto Marron $88.999 " 
+    },
+    { 
+        img: "media/bannerImagenes/3.jpg", 
+        span1Text: "Leggings transparencias en laterales $95.999", 
+        span2Text: "Top Deportivo Negro $55.999" 
+    },
+    { 
+        img: "media/bannerImagenes/4.jpg", 
+        span1Text: "Top Terracota, tirantes anchos $55.999", 
+        span2Text: "Leggings de tiro alto Terracota $55.999" 
+    },
 ];
 
 images.forEach((item, index) => {
