@@ -15,9 +15,9 @@ const buttonhero = document.createElement('button');
 buttonhero.classList.add('buttonhero'); 
 buttonhero.innerHTML = ('Shop Now'); 
 
-// Agregar los elementos a bannerhero
 content.appendChild(titlebanner); 
 content.appendChild(buttonhero); 
-bannerhero.appendChild(content)
-// Agregar bannerhero al contenedor principal sectionhero
+bannerhero.appendChild(content); 
+
+// Agregar banner al contenedor principal sectionhero
 sectionhero.appendChild(bannerhero);
