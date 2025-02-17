@@ -276,7 +276,7 @@ header .sectionheader {
   transition: background-color 0.3s, opacity 0.5s;
   display: flex;
   box-sizing: border-box;
-  z-index: 2;
+  z-index: 1000;
 }
 header .sectionheader.bgc {
   background-color: rgba(36, 34, 31, 0.8);
@@ -409,7 +409,7 @@ header .sectionheader .iconsContainer .button i {
 }
 
 .bannerhero {
-  background: url(../../media/Womanstratchingisolatedsectionhero.jpg);
+  background: url(../media/Womanstratchingisolatedsectionhero.jpg);
   background-position: center;
   box-sizing: border-box;
   overflow: hidden;
