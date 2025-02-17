@@ -108,7 +108,7 @@ const productsItems = [
         id: 7, 
         img: '../media/productos/top/top1.webp',
         title: ' Top Deportivo Café ', 
-        description: 'Diseño minimalista con tirantes delgados. Ideal para entrenamientos de intensidad', 
+        description: 'Diseño minimalista con tirantes delgados y ajuste ceñido. Ideal para entrenamientos de intensidad', 
         price: 19500, 
         category: 'Tops'
     },
@@ -391,7 +391,23 @@ function filterProducts(category) {
 function addToCart(product) {
     cart.push(product);
     console.log("Carrito:", cart);
-    alert(`${product.title} agregado al carrito.`);
+
+    // Mostrar notificación usando Toastify
+    Toastify({
+        text: `${product.title} agregado al carrito.`,
+        duration: 3000, 
+        close: true, 
+        gravity: "top",  
+        position: "right", 
+        backgroundColor: "rgba(36, 34, 31, 0.8)",
+        style: {
+            borderRadius: "10px",  
+            fontFamily: "'Poppins', sans-serif",
+            fontSize: "0.75rem", 
+            padding: "10px",  
+        }
+    }).showToast();
+    
 }
 
 // Renderizar productos inicialmente
