@@ -10,13 +10,13 @@ const cardItems = [
     {
         user: "Julieta Aguilera", 
         text: "¡Este conjunto es una maravilla! Se adapta perfectamente al cuerpo, es cómodo y el diseño es precioso. Sin duda, mi favorito para yoga.", 
-        img: "media/opiniones/Julieta.jpg", 
+        img: "media/opiniones/julieta.jpg", 
         start: 4, 
     },
     {
         user: "Candela d'Hiriart", 
         text: "Me encanta la calidad del tejido, es súper suave y elástico. Además, los colores son hermosos y combinan con todo.", 
-        img: "media/opiniones/Candela.jpg", 
+        img: "media/opiniones/candela.jpg", 
         start: 5, 
     },   
     {
@@ -95,9 +95,9 @@ const createStars = (rating) => {
 
         
         if (i < rating) {
-            star.innerHTML = "<i class='bx bxs-star'></i>"; // Estrella llena (dorado)
+            star.innerHTML = "<i class='bx bxs-star'></i>"; 
         } else {
-            star.innerHTML = "<i class='bx bx-star'></i>"; // Estrella vacía (gris)
+            star.innerHTML = "<i class='bx bx-star'></i>"; 
         }
         starsContainer.appendChild(star);
     }
@@ -176,7 +176,7 @@ const prevSlide = () => {
         currentSlide--;
     } else {
         slides[currentSlide].classList.remove("active");
-        currentSlide = slides.length - 2; // La penúltima slide
+        currentSlide = slides.length - 2; 
     }
 
     slides[currentSlide].classList.add("active");
@@ -204,9 +204,8 @@ container.appendChild(cardWrapper);
 container.appendChild(nextButton);
 mainCarrusel.appendChild(container);
 
-// Inicializar las primeras 4 opiniones
 createSlides();
 cardWrapper.querySelector(".slide").classList.add("active");
 
-// Configuración de autoplay
+
 const autoPlayInterval = setInterval(nextSlide, 2000);

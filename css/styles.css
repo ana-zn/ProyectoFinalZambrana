@@ -631,6 +631,84 @@ header .sectionheader .iconsContainer .button i {
   padding: 16px;
 }
 
+.maintext {
+  padding: 140px 80px 0 80px;
+  display: flex;
+  align-content: center;
+  gap: 24px;
+  height: 600px;
+}
+.maintext .text-container, .maintext .image-container {
+  flex: 1;
+}
+.maintext .text-container h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 6rem;
+  font-style: italic;
+}
+.maintext .image-container {
+  position: relative;
+  width: 100px;
+}
+.maintext .image-container img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.maintext .image-container img:nth-child(1) {
+  z-index: 2;
+  left: 60px;
+  height: 500px;
+  width: 80%;
+}
+.maintext .image-container img:nth-child(2) {
+  z-index: 3;
+  right: 0px;
+  top: -20px;
+  height: 450px;
+  width: 300px;
+}
+
+.sectionInfo {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 56px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  grid-template-rows: auto auto;
+  padding: 0 80px;
+}
+.sectionInfo .content-image, .sectionInfo .content-text {
+  width: 100%;
+  height: 500px;
+}
+.sectionInfo .content-image img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+.sectionInfo .content-text {
+  padding: 32px 32px;
+  text-align: center;
+  color: #24221F;
+}
+.sectionInfo .content-text h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 3.5rem;
+  margin-bottom: 32px;
+}
+
+p {
+  font-family: "Poppins", serif;
+  font-size: 1rem;
+}
+
 .buttonhero {
   display: inline-block;
   padding: 16px 24px;

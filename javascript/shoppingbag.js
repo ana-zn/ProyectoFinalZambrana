@@ -12,7 +12,7 @@ function openModal() {
 
 function closeModal() {
     let cartModal = document.getElementById("cartModal");
-    let cartContent = document.querySelector(".cartModal-content");
+    // let cartContent = document.querySelector(".cartModal-content");
 
   
 
