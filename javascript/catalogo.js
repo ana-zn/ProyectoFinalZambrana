@@ -390,7 +390,6 @@ function filterProducts(category) {
 // Agregar productos al carrito
 function addToCart(product) {
     cart.push(product);
-    console.log("Carrito:", cart);
 
     // Mostrar notificación usando Toastify
     Toastify({
@@ -401,10 +400,11 @@ function addToCart(product) {
         position: "right", 
         backgroundColor: "rgba(36, 34, 31, 0.8)",
         style: {
-            borderRadius: "10px",  
+            borderRadius: "10px", 
+            //  marginTop: "140px",
             fontFamily: "'Poppins', sans-serif",
-            fontSize: "0.75rem", 
-            padding: "10px",  
+            fontSize: "1rem", 
+            padding: "16px",  
         }
     }).showToast();
     

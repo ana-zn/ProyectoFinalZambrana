@@ -109,5 +109,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-console.log("Cart button en header.js:", document.getElementById('shop-bag'));
