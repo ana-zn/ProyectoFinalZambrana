@@ -4,8 +4,8 @@ function openModal() {
 
     cartModal.classList.add("active");
     setTimeout(() => {
-        cartContent.style.transform = "translateX(0)"; // Aparece desde la derecha
-    }, 10); // Pequeño delay para que la transición funcione
+        cartContent.style.transform = "translateX(0)"; 
+    }, 10); 
 
     renderCart();
 }
@@ -14,11 +14,11 @@ function closeModal() {
     let cartModal = document.getElementById("cartModal");
     let cartContent = document.querySelector(".cartModal-content");
 
-    // cartContent.style.transform = "translateX(100%)"; // Deslizar hacia afuera
+  
 
     setTimeout(() => {
-        cartModal.classList.remove("active"); // Ocultar modal después de la animación
-    }, 300); // Coincide con la duración de la animación
+        cartModal.classList.remove("active"); 
+    }, 300);
 }
 
 
