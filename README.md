@@ -10,13 +10,11 @@ PUREbLISS es un ecommerce de ropa especializada para yoga y pilates, desarrollad
 - **Integraciones**: Uso de librerías externas para mejorar la funcionalidad.
 
 ## Tecnologías utilizadas
-- **JavaScript (ES6+)**
+- **JavaScript **
 - **SCSS** (para una mejor organización y mantenimiento de los estilos)
 - **Librerías utilizadas**:
   - **SweetAlert2**: Notificaciones interactivas
-  - **Luxon**: Manejo de fechas
   - **Toastify**: Notificaciones emergentes
-  - **Fetch API**: Consumo de datos desde archivos JSON o APIs externas
 
 
 
@@ -43,8 +41,8 @@ PUREbLISS/
 ## Autor
 - **Nombre:** Ana
 - **GitHub:** [https://github.com/tuusuario](https://github.com/tuusuario)
-- **LinkedIn:** [Tu perfil](https://linkedin.com/in/tuperfil)
-- **Behance:** [Tu portafolio](https://www.behance.net/tuusuario)
+- **LinkedIn:** (www.linkedin.com/in/ana-zambrana-zn22)
+- **Behance:** [Portfolio]([https://www.behance.net/tuusuario](https://www.behance.net/anazambrana1))
 
 ---
 ¡Gracias por visitar PUREbLISS! 🧘‍♀️✨

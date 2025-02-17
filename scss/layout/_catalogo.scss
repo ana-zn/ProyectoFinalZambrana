@@ -1,53 +1,94 @@
-@use "../utilities/variables.scss" as *; 
+@use "../utilities/variables.scss" as *;
 
-.container{
+.container {
     padding: 40px 80px;
     display: flex;
+    gap: 24px;
     justify-content: center;
     box-sizing: border-box;
-    .containerProducts{
+    width: 100%;
+
+    .filterContainer {
+        margin-top: 100px;
+        margin: 100px 40px 0 0;
+        display: flex;
+        flex-direction: column;
+
+        .filterLink {
+            display: flex;
+            gap: 8px;
+            align-items: center;  
+            font-size: 1.25rem; 
+            font-family: $first--font;
+            color: $third--color;
+            font-weight: 400;
+            position: relative;  
+            transition: transform 0.3s ease; 
+            i{
+                font-size: $font-size-m;
+                font-weight: 300;
+            } 
+        }
+        .arrow-icon {
+            opacity: 0;  
+            transition: opacity 0.3s ease;  
+        }
+        .filterLink:hover {
+            transform: translateX(10px);  
+        }
+        .filterLink:hover .arrow-icon {
+            opacity: 1;
+        }
+    }
+
+    .containerProducts {
         display: flex;
         margin-top: 100px;
         justify-content: center;
-        .productslist{
+        width: 100%;
+
+        .productslist {
             box-sizing: content-box;
             display: grid;
             justify-content: center;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px; 
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
             width: 100%;
-            .productItem{
+
+            .productItem {
                 display: flex;
                 width: 100%;
                 flex-direction: column;
-                align-content: center;
+                align-items: center;
                 text-align: center;
-                gap:8px; 
+                gap: 4px;
                 font-family: $first--font;
                 color: $first--color;
-                .productImg{
-                    height: 300px;
+
+                .productImg {
+                    height: 350px;
                     width: 100%;
                     object-fit: cover;
                 }
-                .titleProduct{
+
+                .titleProduct {
                     font-size: $font-size-s;
                     font-weight: 500;
+                    height: 48px;
+                    margin-top: 8px;
                 }
-                .description{
+
+                .description {
                     font-size: $font-size-xs;
                     color: $third--color;
+                    height: 64px;
                 }
-                .price{
+
+                .price {
                     font-weight: 600;
                     padding: 8px 0;
                 }
             }
         }
-       
-        
-    }
-    .containerFilter{
-        order: 1;
     }
 }

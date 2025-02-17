@@ -22,6 +22,14 @@ body main {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 .containerImages {
   height: 800px;
   width: 100%;
@@ -219,19 +227,53 @@ body main {
 .container {
   padding: 40px 80px;
   display: flex;
+  gap: 24px;
   justify-content: center;
   box-sizing: border-box;
+  width: 100%;
+}
+.container .filterContainer {
+  margin-top: 100px;
+  margin: 100px 40px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.container .filterContainer .filterLink {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 1.25rem;
+  font-family: "Poppins", serif;
+  color: #B3B6B7;
+  font-weight: 400;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.container .filterContainer .filterLink i {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.container .filterContainer .arrow-icon {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.container .filterContainer .filterLink:hover {
+  transform: translateX(10px);
+}
+.container .filterContainer .filterLink:hover .arrow-icon {
+  opacity: 1;
 }
 .container .containerProducts {
   display: flex;
   margin-top: 100px;
   justify-content: center;
+  width: 100%;
 }
 .container .containerProducts .productslist {
   box-sizing: content-box;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   width: 100%;
 }
@@ -239,31 +281,31 @@ body main {
   display: flex;
   width: 100%;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   text-align: center;
-  gap: 8px;
+  gap: 4px;
   font-family: "Poppins", serif;
   color: #24221F;
 }
 .container .containerProducts .productslist .productItem .productImg {
-  height: 300px;
+  height: 350px;
   width: 100%;
   object-fit: cover;
 }
 .container .containerProducts .productslist .productItem .titleProduct {
   font-size: 1rem;
   font-weight: 500;
+  height: 48px;
+  margin-top: 8px;
 }
 .container .containerProducts .productslist .productItem .description {
   font-size: 0.875rem;
   color: #B3B6B7;
+  height: 64px;
 }
 .container .containerProducts .productslist .productItem .price {
   font-weight: 600;
   padding: 8px 0;
-}
-.container .containerFilter {
-  order: 1;
 }
 
 header .sectionheader {
