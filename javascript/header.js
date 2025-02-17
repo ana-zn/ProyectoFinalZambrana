@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   logoContainer.classList.add("logo-container");
 
   const logo = document.createElement("img");
-  logo.src = "../media/logo.svg";
+  logo.src = "./media/logo.svg";
   logo.src = "media/logo.svg";
   logo.alt = "Logo de Pure Bliss";
 
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const links = [
     { text: "Inicio", href: "../index.html" },
     { text: "Nosotros", href: "nosotros.html" },
-    { text: "Catalogo", href: "../html/catalogo.html" },
+    { text: "Catalogo", href: "./html/catalogo.html" },
     { text: "Contacto", href: "contacto.html" }
   ];
 

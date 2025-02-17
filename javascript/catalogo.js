@@ -58,7 +58,7 @@ const productsItems = [
     /*Tops*/
     { 
         id: 1, 
-        img: '../media/productos/top/top7.jpg',
+        img: '../media/Productos/top/top7.jpg',
         title: 'Top Negro con Detalles Blancos', 
         description: 'Deportivo y elegante, con costuras en contraste que estilizan la figura.', 
         price: 16000, 
@@ -66,7 +66,7 @@ const productsItems = [
     },
     { 
         id: 2, 
-        img: '../media/productos/top/top2.webp', 
+        img: '../media/Productos/top/top2.webp', 
         title: 'Top Azul Marino', 
         description: 'Cómodo y versátil, y un diseño elegante. Perfecto para yoga, pilates o uso diario', 
         price: 15000, 
@@ -74,7 +74,7 @@ const productsItems = [
     },
     { 
         id: 3, 
-        img: '../media/productos/top/top3.webp',
+        img: '../media/Productos/top/top3.webp',
         title: 'Top Beige Ceñido ', 
         description: 'Tela suave y transpirable. Ideal para entrenamientos o looks deportivos casuales.', 
         price: 13000, 
@@ -82,7 +82,7 @@ const productsItems = [
     },
     { 
         id: 4, 
-        img: '../media/productos/top/top4.webp',
+        img: '../media/Productos/top/top4.webp',
         title: 'Top Marrón Oscuro con Tirantes', 
         description: 'Corte clásico con gran soporte y comodidad. Perfecto para moverte con libertad. ', 
         price: 14500, 
@@ -90,7 +90,7 @@ const productsItems = [
     },
     { 
         id: 5, 
-        img: '../media/productos/top/top5.jpg',
+        img: '../media/Productos/top/top5.jpg',
         title: ' Top Bordó Asimétrico ', 
         description: 'Diseño vanguardista con recortes para un look moderno y atrevido. Brinda sujeción y estilo.', 
         price: 20000, 
@@ -98,7 +98,7 @@ const productsItems = [
     },
     { 
         id: 6, 
-        img: '../media/productos/top/top6.jpg',
+        img: '../media/Productos/top/top6.jpg',
         title: ' Top Celeste con Detalles Negros', 
         description: 'Diseño sofisticado con tirantes finos y detalles en contraste. Comodidad y estilo.', 
         price: 19000, 
@@ -106,7 +106,7 @@ const productsItems = [
     },
     { 
         id: 7, 
-        img: '../media/productos/top/top1.webp',
+        img: '../media/Productos/top/top1.webp',
         title: ' Top Deportivo Café ', 
         description: 'Diseño minimalista con tirantes delgados y ajuste ceñido. Ideal para entrenamientos de intensidad', 
         price: 19500, 
@@ -115,7 +115,7 @@ const productsItems = [
     // Remeras
     { 
         id: 8, 
-        img: '../media/productos/remeras/remeras2.jpg', 
+        img: '../media/Productos/remeras/remeras2.jpg', 
         title: 'Celeste manga Larga - Cuello cuadrado', 
         description: 'Remera manga largo, cuello cuadrado. Tela transpirable ideal para entrenamiento largos', 
         price: 19500, 
@@ -124,7 +124,7 @@ const productsItems = [
     
     { 
         id: 9, 
-        img: '../media/productos/remeras/remeras.webp', 
+        img: '../media/Productos/remeras/remeras.webp', 
         title: 'Remera manga corta - Terracota', 
         description: 'Remera manga corta cuello redondo, color terracota; tela transpirable', 
         price: 18000, 
@@ -132,7 +132,7 @@ const productsItems = [
     },
     { 
         id: 10, 
-        img: '../media/productos/remeras/remeras5.webp', 
+        img: '../media/Productos/remeras/remeras5.webp', 
         title: 'Remera manga larga - cuello bote ', 
         description: 'Remera manga larga, cuello bote. Con tela transpirable y mangas fruncidas', 
         price: 22000, 
@@ -140,7 +140,7 @@ const productsItems = [
     },
     { 
         id: 11, 
-        img: '../media/productos/remeras/remeras1.webp', 
+        img: '../media/Productos/remeras/remeras1.webp', 
         title: 'Remera manga larga - Rosa', 
         description: 'Remera manga larga, con abertura en los pulgares. Ideal para pilates y yoga', 
         price: 17000, 
@@ -148,7 +148,7 @@ const productsItems = [
     },
     { 
         id: 12, 
-        img: '../media/productos/remeras/remeras6.jpg', 
+        img: '../media/Productos/remeras/remeras6.jpg', 
         title: 'Remera traslucida Celeste', 
         description: 'Remera manga larga traslucida, diseño moderno ideal para usar con top debajo', 
         price: 19000, 
@@ -158,7 +158,7 @@ const productsItems = [
     //camperas
     { 
         id: 13, 
-        img: '../media/productos/camperas/camperas.jpg', 
+        img: '../media/Productos/camperas/camperas.jpg', 
         title: 'Campera Rompeviento Violeta', 
         description: 'Diseño ligero y transpirable con secado rápido, con bolsillos y regulador ', 
         price: 88000, 
@@ -166,7 +166,7 @@ const productsItems = [
     },
     { 
         id: 14, 
-        img: '../media/productos/camperas/camperas2.jpg', 
+        img: '../media/Productos/camperas/camperas2.jpg', 
         title: 'Campera cuello alto - Verde Pastel', 
         description: 'Camper cuello alto, ideal para cualquier clima. Diseño moderno y elegante', 
         price: 96000, 
@@ -174,7 +174,7 @@ const productsItems = [
     },
     { 
         id: 15, 
-       img: '../media/productos/camperas/camperas3.jpg', 
+       img: '../media/Productos/camperas/camperas3.jpg', 
         title: ' Campera tonos pasteles', 
         description: 'Diseño dinámico con recortes y colores. Incorpora cordones regulables.', 
         price: 85000, 
@@ -182,7 +182,7 @@ const productsItems = [
     },
     { 
         id: 16, 
-        img: '../media/productos/camperas/camperas4.jpg', 
+        img: '../media/Productos/camperas/camperas4.jpg', 
         title: 'Campera Rompeviento en Violeta, Naranja y Verde', 
         description: 'Combinación armoniosa de tonos pastel, ligera y cómoda. Ideal para quienes buscan estilo.', 
         price: 100000, 
@@ -191,7 +191,7 @@ const productsItems = [
     //Pantalones
     { 
         id: 18, 
-        img: '../media/productos/pantalones/pantalones2.jpg',  
+        img: '../media/Productos/pantalones/pantalones2.jpg',  
         title: 'Pantalón Verde con Rayas', 
         description: 'Ligero y transpirable, perfecto para entrenamientos o uso diario. ', 
         price: 35000, 
@@ -199,7 +199,7 @@ const productsItems = [
     }, 
     { 
         id: 17, 
-        img: '../media/productos/pantalones/pantalones1.jpg',  
+        img: '../media/Productos/pantalones/pantalones1.jpg',  
         title: 'Pantalón Cargo con Bolsillos Chocolate', 
         description: 'Cómodo y resistente, con un diseño funcional que incluye bolsillos laterales.', 
         price: 38000, 
@@ -207,7 +207,7 @@ const productsItems = [
     },
     { 
         id: 19, 
-        img: '../media/productos/pantalones/pantalones3.jpg',  
+        img: '../media/Productos/pantalones/pantalones3.jpg',  
         title: 'Pantalón Azul con Rayas', 
         description: 'Diseño moderno con detalles a rayas diseño vanguardista. Tela de secado rápido.', 
         price: 37000, 
@@ -215,7 +215,7 @@ const productsItems = [
     },
     { 
         id: 20, 
-        img: '../media/productos/pantalones/pantalones4.jpg',  
+        img: '../media/Productos/pantalones/pantalones4.jpg',  
         title: 'Pantalón con Reguladores ', 
         description: 'Versátil y funcional, con tiras ajustables para un calce personalizado.', 
         price: 42000, 
@@ -224,7 +224,7 @@ const productsItems = [
     //Shorts
     { 
         id: 21, 
-        img: '../media/productos/short/short.jpg', 
+        img: '../media/Productos/short/short.jpg', 
         title: 'Short Avionero - Verde', 
         description: 'Ligero, resistente y de secado rápido. Su diseño suelto permite máxima movilidad y confort. ', 
         price: 16000, 
@@ -232,7 +232,7 @@ const productsItems = [
     },
     { 
         id: 22, 
-        img: '../media/productos/short/short2.webp', 
+        img: '../media/Productos/short/short2.webp', 
         title: 'Short Calza Pantalón', 
         description: 'Calza de tejido elástico y transpirable brinda sujeción sin limitar el movimiento.', 
         price: 18000, 
@@ -240,7 +240,7 @@ const productsItems = [
     },
     { 
         id: 23, 
-        img: '../media/productos/short/short3.jpg', 
+        img: '../media/Productos/short/short3.jpg', 
         title: ' Short Burdeos', 
         description: 'Cintura alta y compresión media para mayor soporte. Su tela suave y flexible es ideal.', 
         price: 18000, 
@@ -248,7 +248,7 @@ const productsItems = [
     },
     { 
         id: 24, 
-        img: '../media/productos/short/short4.jpg',   
+        img: '../media/Productos/short/short4.jpg',   
         title: ' Short Calza Seamless', 
         description: 'Ajuste perfecto, se adapta al cuerpo como una segunda piel. Comodidad total y máxima libertad. ', 
         price: 19000, 
@@ -257,7 +257,7 @@ const productsItems = [
     //legging
     { 
         id: 25, 
-        img: '../media/productos/legging/leggings.webp', 
+        img: '../media/Productos/legging/leggings.webp', 
         title: 'Leggings Rojos Rendimiento', 
         description: 'Aporta energía al entrenamiento, leggings de compresión que brindan sujeción y flexibilidad', 
         price:28000, 
@@ -265,7 +265,7 @@ const productsItems = [
     },
     { 
         id: 26, 
-        img: '../media/productos/legging/leggings2.jpg', 
+        img: '../media/Productos/legging/leggings2.jpg', 
         title: 'Leggings Negros con Transparencias', 
         description: 'Diseño elegante y moderno con paneles de malla para mayor ventilación, ajuste perfecto.', 
         price: 32000, 
@@ -273,7 +273,7 @@ const productsItems = [
     },
     { 
         id: 27, 
-        img: '../media/productos/legging/leggings3.jpg', 
+        img: '../media/Productos/legging/leggings3.jpg', 
         title: 'Leggings Beige Seamless', 
         description: 'Diseño sin costuras que se adapta como una segunda piel. Ultra cómodos y perfectos.', 
         price: 38000, 
@@ -281,7 +281,7 @@ const productsItems = [
     },
     { 
         id: 28, 
-        img: '../media/productos/legging/leggings4.jpg', 
+        img: '../media/Productos/legging/leggings4.jpg', 
         title: 'Leggings Marrones Soft Touch', 
         description: 'Suaves y cómodos, con cintura alta para mejor sujeción. Ideales para yoga o pilates.', 
         price: 37000, 
@@ -290,7 +290,7 @@ const productsItems = [
     // BodysSuites
     { 
         id: 29, 
-        img: '../media/productos/bodysuit/bodysuit1.jpg',
+        img: '../media/Productos/bodysuit/bodysuit1.jpg',
         title:  'Bodysuit Manga Larga con Frunce ',
         description: 'Con ajuste perfecto que realza la postura. Ideal para ejercicios de elongación y equilibrio', 
         price: 50000, 
@@ -298,7 +298,7 @@ const productsItems = [
     },
     { 
         id: 30, 
-        img: '../media/productos/bodysuit/bodysuit2.jpg',
+        img: '../media/Productos/bodysuit/bodysuit2.jpg',
         title: 'Bodysuit Negro de Tirantes ', 
         description: 'Estilizado y ajuste ceñido para máxima flexibilidad. Ideal para entrenamientos de bajo impacto', 
         price: 48000, 
@@ -306,7 +306,7 @@ const productsItems = [
     },
     { 
         id: 31, 
-        img: '../media/productos/bodysuit/bodysuit3.jpg',
+        img: '../media/Productos/bodysuit/bodysuit3.jpg',
         title: 'BodySuit Manga Larga + Short', 
         description: 'Suave, ligero y transpirable, perfecto para moverte con libertad', 
         price: 42000, 
@@ -314,7 +314,7 @@ const productsItems = [
     },
     { 
         id: 32, 
-        img: '../media/productos/bodysuit/bodysuit4.jpg',
+        img: '../media/Productos/bodysuit/bodysuit4.jpg',
         title: 'Bodysuit sin Costuras', 
         description: 'Confeccionado en tela de secado rápido y con ajuste perfecto que realza la postura.', 
         price: 45000, 
@@ -323,7 +323,7 @@ const productsItems = [
     //Medias
     { 
         id: 33, 
-        img: '../media/productos/calcetines/calcetines1.webp', 
+        img: '../media/Productos/calcetines/calcetines1.webp', 
         title: 'Calcetines de agarre - Burdeos', 
         description: 'Elegantes, suaves, acolchados y con suela antideslizante para mayor estabilidad', 
         price: 9000, 
@@ -331,7 +331,7 @@ const productsItems = [
     },
     { 
         id: 34, 
-        img: '../media/productos/calcetines/calcetines2.webp', 
+        img: '../media/Productos/calcetines/calcetines2.webp', 
         title: 'Calcetines de pilates - Terracota', 
         description: 'Calcetines antideslizantes color naranja. Cómodos, transpirables y con excelente agarre', 
         price: 8000, 
@@ -339,7 +339,7 @@ const productsItems = [
     },
     { 
         id: 35, 
-        img:  '../media/productos/calcetines/calcetines3.webp', 
+        img:  '../media/Productos/calcetines/calcetines3.webp', 
         title: 'Calcetines de Pilates - Beige', 
         description: 'Discreción y confort en un solo diseño. Elaborados con tejido transpirable y refuerzos.', 
         price: 7500, 
@@ -347,7 +347,7 @@ const productsItems = [
     },
     { 
         id: 36, 
-        img:  '../media/productos/calcetines/calcetines4.webp', 
+        img:  '../media/Productos/calcetines/calcetines4.webp', 
         title: 'Calcetines de Pilates - Blanco',  
         description: 'Clásicos y modernos a la vez. Su diseño y su suela antideslizante te garantizan seguridad y estilo', 
         price: 9500, 
