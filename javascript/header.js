@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Lista de Enlaces
   const links = [
     { text: "Inicio", href: "../index.html" },
-    { text: "Nosotros", href: "nosotros.html" },
     { text: "Catalogo", href: "../html/catalogo.html" },
+    { text: "Nosotros", href: "nosotros.html" },
     { text: "Contacto", href: "contacto.html" }
   ];
 
@@ -109,5 +109,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-console.log("Cart button en header.js:", document.getElementById('shop-bag'));
