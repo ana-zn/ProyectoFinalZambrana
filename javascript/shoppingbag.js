@@ -28,14 +28,14 @@ function renderCart() {
     cartContainer.innerHTML = "";
     let total = 0;
 
-    productsItems.forEach((item, index) => {
+    cart.forEach((item, index) => { // Usa cart aquí
         total += item.price * item.quantity;
 
         let productDiv = document.createElement("div");
         productDiv.classList.add("product");
 
         productDiv.innerHTML = `
-            <span>${item.name} - $${item.price} x ${item.quantity}</span>
+            <span>${item.title} - $${item.price} x ${item.quantity}</span>
             <button onclick="addProduct(${index})">+</button>
             <button onclick="removeProduct(${index})">-</button>
         `;
@@ -44,6 +44,7 @@ function renderCart() {
 
     document.getElementById("totalPrice").textContent = total;
 }
+
 
 function addProduct(index) {
     productsItems[index].quantity++;

@@ -407,10 +407,19 @@ function addToCart(product) {
             padding: "16px",  
         }
     }).showToast();
+
+    const existingProduct = cart.find(item => item.id === product.id);
+    if (existingProduct) {
+        existingProduct.quantity++;
+    } else {
+        product.quantity = 1; 
+        cart.push(product);
+    }
+    openModal(); 
     
 }
 
-// Renderizar productos inicialmente
+
 renderProducts(productsItems);
 
 containerProducts.appendChild(productslist);
