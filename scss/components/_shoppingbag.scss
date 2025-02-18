@@ -10,9 +10,8 @@
     height: 100%;
     background: $bg-color;
     display: flex ;
-    justify-content:center;
-    z-index: 100;
-     
+    justify-content:flex-end;
+    z-index: 1000;
     &-content {
         position: fixed;
         top: 0;
@@ -22,9 +21,10 @@
         justify-content: space-between;
         background: $second--color;  
         padding: 20px;
-        border-radius: 16px;
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 24px;
         text-align: center;
-        max-width: 400px;
+        max-width: 500px;
         width: 90%;
         height: 100%;
         position: relative;
@@ -40,15 +40,19 @@
                 text-align: center;
                 font-family: $second--font;
                 font-size: $font-size-l; 
+                margin: 40px 0;
             }
-            ul{
+            .cartItems{
                 width: 100%;
-                li{
+                .product{
                     width: 100%;
                     display: flex;
-                    flex-direction: column;
-                    text-align: left;
-                    list-style: none;
+                    button{
+
+                    }
+                    span{
+                        margin: 0 8px;
+                    }
                 }
             }
         }

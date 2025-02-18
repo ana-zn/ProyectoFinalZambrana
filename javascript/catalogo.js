@@ -415,7 +415,7 @@ function addToCart(product) {
         product.quantity = 1; 
         cart.push(product);
     }
-    openModal(); 
+    // openModal(); 
     
 }
 

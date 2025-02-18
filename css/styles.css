@@ -318,7 +318,7 @@ header .sectionheader {
   transition: background-color 0.3s, opacity 0.5s;
   display: flex;
   box-sizing: border-box;
-  z-index: 1000;
+  z-index: 500;
 }
 header .sectionheader.bgc {
   background-color: rgba(36, 34, 31, 0.8);
@@ -826,8 +826,8 @@ p {
   height: 100%;
   background: rgba(36, 34, 31, 0.8);
   display: flex;
-  justify-content: center;
-  z-index: 100;
+  justify-content: flex-end;
+  z-index: 1000;
 }
 .cartModal-content {
   position: fixed;
@@ -838,9 +838,10 @@ p {
   justify-content: space-between;
   background: #F7F3E3;
   padding: 20px;
-  border-radius: 16px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
   text-align: center;
-  max-width: 400px;
+  max-width: 500px;
   width: 90%;
   height: 100%;
   position: relative;
@@ -858,16 +859,17 @@ p {
   text-align: center;
   font-family: "Cormorant Garamond", serif;
   font-size: 2rem;
+  margin: 40px 0;
 }
-.cartModal-content .content-card ul {
+.cartModal-content .content-card .cartItems {
   width: 100%;
 }
-.cartModal-content .content-card ul li {
+.cartModal-content .content-card .cartItems .product {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  text-align: left;
-  list-style: none;
+}
+.cartModal-content .content-card .cartItems .product span {
+  margin: 0 8px;
 }
 .cartModal-content .totalPriceContainer {
   width: 100%;
