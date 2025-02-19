@@ -10,10 +10,10 @@ contenttext.classList.add('content-text');
 
 //Tiulo
 const title = document.createElement('h2'); 
-title.textContent = "Where comfort meet flexibility"
+title.textContent = "Comodidad y flexibilidad en uno"
 //Subitulo
 const subtitle = document.createElement('p'); 
-subtitle.textContent = "Subscribe to our newsletter and get 30% off your first purchase."
+subtitle.textContent = "Suscríbete a nuestro newsletter y obtén un 30% de descuento en tu primera compra."
 
 contenttext.appendChild(title); 
 contenttext.appendChild(subtitle); 

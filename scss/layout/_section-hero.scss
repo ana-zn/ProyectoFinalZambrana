@@ -15,17 +15,17 @@
     .content{
         padding: 0 80px;
         .titlebanner{
+            
             box-sizing: border-box;
             overflow: hidden;
             font-family: $second--font; 
             font-size: $font-size-xxl;
-            width: 600px;
-            line-height: 50%;
+            width: 800px;
+            line-height: 20px; 
             letter-spacing: -2px;
             font-style: italic;
             font-weight: 400;
             line-height: normal; 
-            text-transform: capitalize;
             color: $second--color;
         }
     }

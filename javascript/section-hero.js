@@ -9,7 +9,7 @@ content.classList.add('content');
 
 const titlebanner = document.createElement('h1'); 
 titlebanner.classList.add('titlebanner'); 
-titlebanner.innerHTML = ('where comfort meets flexibility');
+titlebanner.innerHTML = ('Comodidad y flexibilidad en uno');
 
 const buttonhero = document.createElement('button'); 
 buttonhero.classList.add('buttonhero'); 
