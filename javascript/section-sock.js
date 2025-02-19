@@ -80,7 +80,7 @@ for (let i = 0; i < 4; i++) {
         
         const textDiv = document.createElement('div');
         textDiv.classList.add('text-content');
-        textDiv.textContent = texts[i - 2]; // Los textos se asignan a partir de index 2
+        textDiv.textContent = texts[i - 2];
 
         box.appendChild(textDiv);
     }

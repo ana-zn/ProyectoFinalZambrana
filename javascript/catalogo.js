@@ -400,8 +400,7 @@ function addToCart(product) {
         position: "right", 
         backgroundColor: "rgba(36, 34, 31, 0.8)",
         style: {
-            borderRadius: "10px", 
-            //  marginTop: "140px",
+            borderRadius: "10px",
             fontFamily: "'Poppins', sans-serif",
             fontSize: "1rem", 
             padding: "16px",  

@@ -9,8 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
   logoContainer.classList.add("logo-container");
   
   const logo = document.createElement("img");
-  logo.src = "/media/logo.svg";
+  logo.src = "./media/logo.svg";
   logo.alt = "Logo de Pure Bliss";
+  logo.onerror = function () {
+    this.src = "../media/logo.svg";
+  };
   
   // Navegación
   const nav = document.createElement("nav");
@@ -19,10 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
   ul.classList.add('container-list');
   
   const links = [
-    { text: "Inicio", href: "/index.html" },
-    { text: "Nosotros", href: "/html/nosotros.html" },
-    { text: "Catálogo", href: "/html/catalogo.html" },
-    { text: "Contacto", href: "/html/contacto.html" }
+    { text: "Inicio", href: "../index.html", fallback: "index.html" },
+    { text: "Nosotros", href: "../html/nosotros.html", fallback: "html/nosotros.html" },
+    { text: "Catálogo", href: "../html/catalogo.html", fallback: "html/catalogo.html" },
+    { text: "Contacto", href: "#", fallback: "#" }
   ];
   
   links.forEach((link) => {
