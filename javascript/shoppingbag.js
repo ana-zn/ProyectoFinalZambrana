@@ -11,7 +11,8 @@ function openModal() {
 
 	const closee = document.createElement("div")
 	contentCard.classList.add("closeModal"); 
-	closee.innerHTML=` <button onclick="closeModal()"><i class='bx bx-x'></i></button>`
+	closee.innerHTML=` <button onclick="closeModal()"><i class='bx bx-x'></i></button>`; 
+	closee.id = "button-closeModal";
 
 	const title = document.createElement("h2");
 	title.classList.add("titleModal");
@@ -23,9 +24,8 @@ function openModal() {
 	const totalContainer = document.createElement("div");
 	totalContainer.classList.add("totalPriceContainer");
 	totalContainer.innerHTML = `
-        <p>Total: $<span id="totalPrice">0</span></p>
-        <button onclick="closeModal()">Cerrar</button>
-    `;
+		<p>Total: $<span id="totalPrice">0</span></p>
+		<button onclick="completePurchase()">Completar Compra</button>`;
 	
 	contentCard.appendChild(closee)
 	contentCard.appendChild(title);
@@ -41,7 +41,46 @@ function openModal() {
 
 	renderCart();
 }
+//
+function completePurchase() {
+    if (cart.length === 0) {
+        Swal.fire({
+            title: "Carrito vacío",
+            text: "No tienes productos en el carrito.",
+            icon: "warning",
+            confirmButtonText: "Aceptar",
+			customClass: {
+				popup: 'custom-swal-popup',           
+				header: 'custom-swal-header',         
+				title: 'custom-swal-title',          
+				confirmButton: 'custom-swal-button'
+			  },
+        });
+        return;
+    }
 
+    closeModal();
+
+    
+    Swal.fire({
+        title: "¡Compra completada!",
+        text: "Gracias por tu compra.",
+        icon: "success",
+        confirmButtonText: "Aceptar",
+		customClass: {
+			popup: 'custom-swal-popup',           
+			header: 'custom-swal-header',         
+			title: 'custom-swal-title',             
+			confirmButton: 'custom-swal-button'
+		  },
+    }).then((result) => {
+        if (result.isConfirmed) {
+            cart = [];
+            renderCart();
+        }
+    });
+}
+//
 function closeModal() {
 	const cartModal = document.getElementById("cartModal");
 	if (cartModal) {
@@ -64,11 +103,15 @@ function renderCart() {
 		productDiv.classList.add("product");
 
 		productDiv.innerHTML = `
-		<span>${item.title} - $${item.price} </span>
-		<button onclick="addProduct(${index})">+</button>
-		<span>${item.quantity || 1}</span>
-		<button onclick="removeProduct(${index})">-</button>
-		<span> = $${(item.price * (item.quantity || 1)).toFixed(2)}</span>
+		<div class="contentbuttons">
+			<span>${item.title}<span class="price">- $${item.price}</span></span>
+			<div>
+			<button onclick="addProduct(${index})"><i class='bx bx-plus'></i></button>
+			<span>${item.quantity || 1}</span>
+			<button onclick="removeProduct(${index})"><i class='bx bx-minus'></i></button>
+			</div>
+		</div>
+		<span> $${(item.price * (item.quantity || 1)).toFixed(2)}</span>
 	`;
 	cartContainer.appendChild(productDiv);
 	

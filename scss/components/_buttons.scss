@@ -104,3 +104,22 @@
     border: $second--border;
     border-radius: 100px;
 }
+#button-closeModal{
+    button{
+        background-color: $first--color; 
+        border: $first--color;
+        color: $second--color;
+        border-radius: 100px;
+        width: 40px;
+        height: 40px;
+        i{
+            font-size: $font-size-m; 
+
+        }
+    }
+    
+    
+}
+.btn-warning-custom{
+    background-color: $bg-color;
+}

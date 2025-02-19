@@ -20,7 +20,7 @@
         flex-direction: column;
         justify-content: space-between;
         background: $second--color;  
-        padding: 20px;
+        padding: 32px;
         border-top-left-radius: 24px;
         border-bottom-left-radius: 24px;
         text-align: center;
@@ -31,6 +31,8 @@
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         transform: translateX(100%); 
         transition: transform 0.3s ease-in-out;
+       
+        
         .content-card{
             display: flex;
             align-items: flex-end;
@@ -40,26 +42,11 @@
                 text-align: center;
                 font-family: $second--font;
                 font-size: $font-size-l; 
-                margin: 40px 0;
+                margin: 16px 0;
             }
-            .cartItems{
-                width: 100%;
-                .product{
-                    width: 100%;
-                    display: flex;
-                    button{
-
-                    }
-                    span{
-                        margin: 0 8px;
-                    }
-                }
-            }
+            
         }
 
-        .totalPriceContainer{
-            width: 100%;
-        }
     }
 
     &.active {
@@ -69,3 +56,40 @@
     }
     
 }
+#cartItems{
+    width: 100%;
+    .product {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 24px 0; 
+        border-bottom: $first--border;
+        font-family: $first--font;
+        align-items: flex-start; 
+        .price{
+            color: $third--color; 
+            margin: 0 16px;
+        }
+        .contentbuttons{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            button{
+                width: 32px;
+                height: 32px;
+                margin: 0 8px;
+                background-color: transparent;
+                border: 2px solid #24221F;
+                color: $first--color;
+                border-radius: 100px;
+                i{
+                    font-size: $font-size-s;
+                }
+            }
+
+        }
+       
+    }
+}
+

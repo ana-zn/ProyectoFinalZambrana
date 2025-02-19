@@ -709,6 +709,19 @@ p {
   font-size: 1rem;
 }
 
+.custom-swal-popup {
+  background-color: #F7F3E3;
+  color: #24221F;
+  font-family: "Poppins", serif;
+}
+.custom-swal-popup .custom-swal-button {
+  background-color: #24221F;
+  border-radius: 100px;
+  font-size: 1rem;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+}
+
 .buttonhero {
   display: inline-block;
   padding: 16px 24px;
@@ -815,6 +828,22 @@ p {
   border-radius: 100px;
 }
 
+#button-closeModal button {
+  background-color: #24221F;
+  border: #24221F;
+  color: #F7F3E3;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+}
+#button-closeModal button i {
+  font-size: 1.5rem;
+}
+
+.btn-warning-custom {
+  background-color: rgba(36, 34, 31, 0.8);
+}
+
 .cartModal {
   display: none;
   box-sizing: content-box;
@@ -837,7 +866,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   background: #F7F3E3;
-  padding: 20px;
+  padding: 32px;
   border-top-left-radius: 24px;
   border-bottom-left-radius: 24px;
   text-align: center;
@@ -859,23 +888,45 @@ p {
   text-align: center;
   font-family: "Cormorant Garamond", serif;
   font-size: 2rem;
-  margin: 40px 0;
-}
-.cartModal-content .content-card .cartItems {
-  width: 100%;
-}
-.cartModal-content .content-card .cartItems .product {
-  width: 100%;
-  display: flex;
-}
-.cartModal-content .content-card .cartItems .product span {
-  margin: 0 8px;
-}
-.cartModal-content .totalPriceContainer {
-  width: 100%;
+  margin: 16px 0;
 }
 .cartModal.active .cartModal-content {
   transform: translateX(0);
+}
+
+#cartItems {
+  width: 100%;
+}
+#cartItems .product {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-bottom: 1.5px solid #24221F;
+  font-family: "Poppins", serif;
+  align-items: flex-start;
+}
+#cartItems .product .price {
+  color: #B3B6B7;
+  margin: 0 16px;
+}
+#cartItems .product .contentbuttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#cartItems .product .contentbuttons button {
+  width: 32px;
+  height: 32px;
+  margin: 0 8px;
+  background-color: transparent;
+  border: 2px solid #24221F;
+  color: #24221F;
+  border-radius: 100px;
+}
+#cartItems .product .contentbuttons button i {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
