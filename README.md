@@ -1,10 +1,13 @@
 ﻿# ProyectoFinalZambrana
 # PUREbLISS - Ecommerce de Ropa de Yoga y Pilates
+<p align="center">
+  <img src="media/logo.svg" alt="logo de purebliss" height="500">
+</p>
 
-## Descripción
 PUREbLISS es un ecommerce de ropa especializada para yoga y pilates, desarrollado como proyecto final del curso de JavaScript. El objetivo es ofrecer una experiencia de compra fluida y atractiva, combinando JavaScript para la interactividad, librerías para mejorar la funcionalidad y SCSS para una mejor gestión de los estilos.
 
 ## Características
+-**Inicio**: Novedades, carrusel de opiniones y banner de suscripción al Newsletter 
 - **Catálogo de productos**: Listado dinámico de prendas con imágenes, precios y descripciones.
 - **Carrito de compras**: Agregar, eliminar y modificar productos en el carrito.
 - **Integraciones**: Uso de librerías externas para mejorar la funcionalidad.
