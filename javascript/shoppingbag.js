@@ -11,7 +11,7 @@ function openModal() {
 
 	const closee = document.createElement("div")
 	contentCard.classList.add("closeModal"); 
-	closee.innerHTML=` <button class="buttonhero" onclick="closeModal()"><i class='bx bx-x'></i></button>`; 
+	closee.innerHTML=` <button onclick="closeModal()"><i class='bx bx-x'></i></button>`; 
 	closee.id = "button-closeModal";
 
 	const title = document.createElement("h2");
