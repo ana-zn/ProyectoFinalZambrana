@@ -1,0 +1,21 @@
+@use "../utilities/variables.scss" as *; 
+//     popup: 'custom-swal-popup',           
+//     header: 'custom-swal-header',         
+//     title: 'custom-swal-title',          
+//     content: 'custom-swal-content',       
+//     confirmButton: 'custom-swal-confirm'
+//   },
+
+.custom-swal-popup{
+    background-color: $second--color; 
+    color: $first--color;
+    font-family: $first--font;
+    .custom-swal-button{
+        background-color: $first--color;
+        border-radius: 100px;
+        font-size: $font-size-s;
+        font-family: $first--font;
+        font-weight: 500;
+
+    }
+}
