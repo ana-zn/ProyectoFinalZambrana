@@ -54,6 +54,27 @@
             transform: translateX(0);
         }
     }
+    .totalPriceContainer{
+        p{
+            font-family: $first--font;
+            color: $first--color;
+            font-size: $font-size-m;
+            margin: 16px 0 ;
+            border-top: $first--border;
+        }
+        button{
+            display: inline-block;
+            padding: 16px 24px; 
+            border-radius: 10rem;
+            background-color: $first--color ; 
+            color:$second--color;
+            font-size: $font-size-s;
+            transition: all .3s;
+            z-index: 1;
+            border: $first--border; 
+        }
+        
+    }
     
 }
 #cartItems{

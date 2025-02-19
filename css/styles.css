@@ -893,6 +893,24 @@ p {
 .cartModal.active .cartModal-content {
   transform: translateX(0);
 }
+.cartModal .totalPriceContainer p {
+  font-family: "Poppins", serif;
+  color: #24221F;
+  font-size: 1.5rem;
+  margin: 16px 0;
+  border-top: 1.5px solid #24221F;
+}
+.cartModal .totalPriceContainer button {
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 10rem;
+  background-color: #24221F;
+  color: #F7F3E3;
+  font-size: 1rem;
+  transition: all 0.3s;
+  z-index: 1;
+  border: 1.5px solid #24221F;
+}
 
 #cartItems {
   width: 100%;
